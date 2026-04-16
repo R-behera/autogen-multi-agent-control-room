@@ -1,0 +1,114 @@
+{
+  "slug": "autogen-multi-agent-control-room",
+  "title": "AutoGen Multi-Agent Control Room",
+  "project_type": "llm",
+  "domain": "Multi-Agent Operations AI",
+  "summary": "Package multi-agent workflows into an operator-first control room with handoff traces, review gates, and auditable decisions.",
+  "tags": [
+    "autogen",
+    "multi-agent",
+    "llm",
+    "ops"
+  ],
+  "accent": "#2c8ac8",
+  "secondary_accent": "#8ea92c",
+  "dashboard_metrics": [
+    {
+      "label": "Resolution Rate",
+      "value": "64%",
+      "delta": "+5.8%"
+    },
+    {
+      "label": "Answer Quality",
+      "value": "89%",
+      "delta": "+2.2%"
+    },
+    {
+      "label": "Ops Time Saved",
+      "value": "18h",
+      "delta": "+3h"
+    }
+  ],
+  "sample_features": {
+    "query": "Summarize the highest priority risk and recommended next step.",
+    "audience": "analytics"
+  },
+  "sample_metrics": {
+    "acquisition": 53.5,
+    "activation": 49.5,
+    "retention": 60.0,
+    "revenue": 101.5
+  },
+  "knowledge_base": [
+    "AutoGen Multi-Agent Control Room is positioned as a Multi-Agent Operations AI starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.",
+    "The primary value proposition is: Package multi-agent workflows into an operator-first control room with handoff traces, review gates, and auditable decisions.",
+    "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.",
+    "Typical stakeholders include analytics, operations, product, and leadership teams working on autogen, multi-agent, llm, ops.",
+    "Source paper: AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+    "Official repo: https://github.com/microsoft/autogen",
+    "Production differentiation focus: Wrap the upstream multi-agent operations ai capability in a reviewable operator workflow instead of a single demo script.; Surface latency, quality, and execution traces so the system feels deployment-ready rather than experimental.; Design a distinct UI and reporting layer that makes the project portfolio-friendly and easier to explain."
+  ],
+  "research_key": "autogen-multi-agent-control-room",
+  "research_score": 9.803,
+  "paper_title": "AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation",
+  "paper_url": "https://arxiv.org/abs/2308.08155",
+  "repo_url": "https://github.com/microsoft/autogen",
+  "repo_org": "microsoft",
+  "why_high_score": [
+    "Official or primary upstream repo with 57120 GitHub stars.",
+    "Active maintenance signal with recent push at 2026-04-15T11:59:09Z.",
+    "A programming framework for agentic AI"
+  ],
+  "differentiation_hooks": [
+    "Wrap the upstream multi-agent operations ai capability in a reviewable operator workflow instead of a single demo script.",
+    "Surface latency, quality, and execution traces so the system feels deployment-ready rather than experimental.",
+    "Design a distinct UI and reporting layer that makes the project portfolio-friendly and easier to explain."
+  ],
+  "app_archetype": "copilot",
+  "ui_profile": {
+    "layout": "horizon",
+    "surface": "paper",
+    "font_stack": "\"Avenir Next\", \"Segoe UI\", sans-serif",
+    "radius": 24,
+    "shadow": 54,
+    "eyebrow_style": "outline",
+    "module_columns": 3,
+    "hero_align": "split",
+    "headline_mode": "compact"
+  },
+  "app_modules": [
+    {
+      "label": "Workflow 01",
+      "title": "Routing Simulator",
+      "description": "Preview how a request gets prioritized or routed through the workflow.",
+      "endpoint": "/score",
+      "input_mode": "json",
+      "cta": "Simulate Route",
+      "prefill": "{\n  \"features\": {\n    \"query\": \"Summarize the highest priority risk and recommended next step.\",\n    \"audience\": \"analytics\"\n  }\n}",
+      "hint": "Routing score and top signals will appear here.",
+      "span": "normal"
+    },
+    {
+      "label": "Workflow 02",
+      "title": "Operator Brief",
+      "description": "Generate a concise recommended action set for the current workflow state.",
+      "endpoint": "/recommend",
+      "input_mode": "json",
+      "cta": "Generate Brief",
+      "prefill": "{\n  \"prompt\": \"Recommend the next best action for AutoGen Multi-Agent Control Room.\",\n  \"features\": {\n    \"query\": \"Summarize the highest priority risk and recommended next step.\",\n    \"audience\": \"analytics\"\n  },\n  \"metrics\": {\n    \"acquisition\": 53.5,\n    \"activation\": 49.5,\n    \"retention\": 60.0,\n    \"revenue\": 101.5\n  }\n}",
+      "hint": "Operator brief and recommended actions will appear here.",
+      "span": "wide"
+    },
+    {
+      "label": "Workflow 03",
+      "title": "Grounded Prompt",
+      "description": "Ask a targeted question and inspect the support context behind the answer.",
+      "endpoint": "/query",
+      "input_mode": "text",
+      "cta": "Run Prompt",
+      "prefill": "What is the top priority recommendation for AutoGen Multi-Agent Control Room?",
+      "hint": "Grounded answer and context excerpts will appear here.",
+      "span": "normal"
+    }
+  ]
+}

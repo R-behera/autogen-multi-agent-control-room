@@ -1,0 +1,98 @@
+{
+  "upstream": {
+    "owner": "microsoft",
+    "repo": "autogen",
+    "source_url": "https://github.com/microsoft/autogen",
+    "local_path": "/Users/Rb/Documents/LLM based projects /sources/microsoft__autogen",
+    "branch": "main",
+    "default_branch": "main",
+    "commit": "027ecf0a379bcc1d09956d46d12d44a3ad9cee14",
+    "fork_requested": false,
+    "fork_result": ""
+  },
+  "audit": {
+    "file_count": 1837,
+    "text_file_count": 1022,
+    "top_suffixes": [
+      [
+        ".py",
+        546
+      ],
+      [
+        ".cs",
+        497
+      ],
+      [
+        ".md",
+        162
+      ],
+      [
+        ".tsx",
+        96
+      ],
+      [
+        ".csproj",
+        64
+      ],
+      [
+        ".ipynb",
+        49
+      ],
+      [
+        "<none>",
+        49
+      ],
+      [
+        ".json",
+        42
+      ]
+    ],
+    "style_counts": {
+      "other": 568,
+      "PascalCase": 547,
+      "hidden": 31,
+      "kebab-case": 138,
+      "snake_case": 536,
+      "camelCase": 17
+    },
+    "token_hits": {
+      "TODO": [
+        "dotnet/dotnet-install.sh",
+        ".azure/pipelines/templates/build.yaml",
+        "dotnet/samples/dev-team/seed-memory/README.md",
+        "docs/design/03 - Agent Worker Protocol.md",
+        "python/packages/autogen-agentchat/src/autogen_agentchat/agents/_user_proxy_agent.py",
+        "python/packages/autogen-agentchat/src/autogen_agentchat/agents/_assistant_agent.py",
+        "python/packages/autogen-agentchat/src/autogen_agentchat/agents/_code_executor_agent.py",
+        "python/packages/autogen-ext/tests/test_worker_runtime.py"
+      ],
+      "XXX": [
+        "dotnet/dotnet-install.sh",
+        "python/packages/autogen-ext/src/autogen_ext/tools/mcp/_workbench.py"
+      ]
+    },
+    "findings": [
+      "No obvious tests directory or test files detected.",
+      "No container packaging signal detected, which makes demos and deployment less portable.",
+      "No obvious Python dependency manifest was found.",
+      "Mixed filename conventions detected: PascalCase, camelCase, kebab-case, snake_case.",
+      "Open maintenance markers detected: TODO in 48 file(s), XXX in 2 file(s).",
+      "Large files that may benefit from decomposition: python/packages/autogen-agentchat/tests/test_assistant_agent.py (3562 lines), python/packages/autogen-ext/tests/models/test_openai_model_client.py (3380 lines), python/packages/autogen-agentchat/tests/test_group_chat.py (1946 lines).",
+      "Notebook-heavy repo without an obvious matching test surface."
+    ],
+    "strengths": [
+      "Repository has a top-level README.",
+      "Repository exposes a dedicated docs surface.",
+      "Repository has GitHub Actions or another CI entry point."
+    ],
+    "largest_files": [
+      "python/packages/autogen-agentchat/tests/test_assistant_agent.py (3562 lines)",
+      "python/packages/autogen-ext/tests/models/test_openai_model_client.py (3380 lines)",
+      "python/packages/autogen-agentchat/tests/test_group_chat.py (1946 lines)"
+    ],
+    "has_tests": false,
+    "has_docs": true,
+    "has_ci": true,
+    "has_docker": false
+  }
+}

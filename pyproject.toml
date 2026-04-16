@@ -1,0 +1,15 @@
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autogen-multi-agent-control-room"
+version = "0.1.0"
+description = "Package multi-agent workflows into an operator-first control room with handoff traces, review gates, and auditable decisions."
+readme = "README.md"
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
