@@ -1,9 +1,5 @@
-
 services:
-  api:
+  app:
     build: .
-    image: autogen-multi-agent-control-room:latest
     ports:
       - "8000:8000"
-    env_file:
-      - .env.example
